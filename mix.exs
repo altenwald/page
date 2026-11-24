@@ -1,7 +1,7 @@
 defmodule Page.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
   @source_url "https://github.com/altenwald/page"
 
   def project do
@@ -27,7 +27,8 @@ defmodule Page.MixProject do
       {:ex_check, "~> 0.17", only: [:dev, :test], runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:doctor, "~> 0.23", only: [:dev, :test], runtime: false},
-      {:ex_doc, "~> 0.40", only: [:dev, :test], runtime: false}
+      {:ex_doc, "~> 0.40", only: [:dev, :test], runtime: false},
+      {:prisma, "~> 0.2", only: [:dev, :test], runtime: false}
     ]
   end
 
@@ -40,7 +41,7 @@ defmodule Page.MixProject do
     [
       licenses: ["MIT"],
       links: %{"GitHub" => @source_url},
-      files: ~w(lib assets mix.exs README* CHANGELOG* LICENSE* .formatter.exs)
+      files: ~w(lib assets mix.exs README* CHANGELOG* LICENSE* .formatter.exs page_*.pplt)
     ]
   end
 

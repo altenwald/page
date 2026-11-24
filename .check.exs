@@ -6,6 +6,7 @@
     {:credo, "mix credo --strict"},
     {:doctor, "mix doctor --raise"},
     {:ex_doc, "mix docs --warnings-as-errors"},
+    {:prisma, "mix prisma"},
     {:ex_unit, "mix test --warnings-as-errors --cover", env: %{"MIX_ENV" => "test"}}
   ]
 ]
